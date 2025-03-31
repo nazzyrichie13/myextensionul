@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Frontend Mentor | Browser extensions manager UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="myextentsion/assets/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf" type="image/x-icon">
+</head>
+<body>
+    <div class="logo">
+            <div class="logo-image">
+                <img src="myextentsion/assets/images/logo.svg" alt="icon" class="favimage">
+        
+            </div>
+            <div class="simage">
+                <img src="myextentsion/assets/images/icon-sun.svg" alt="">
+            </div>
+    </div>
+    <div class="list">
+        <div class="ex-list">
+            <h3>Extensions List</h3>
+        </div>
+        <div class="button-list" id="button-list" >
+            <button type="button" class="special-button" >All</button>
+            <button type="button" id="activeButton"  >Active</button>
+            <button type="button" id="inActiveButton" >Inactive</button>
+        </div>
+    </div>
+    <!-- ending of list -->
+     <div class="list-item">
+     <div class="card-list">
+        <div class="devlens">
+            <img src="myextentsion/assets/images/logo-devlens.svg" alt="">
+            <div>
+                <h3><a href="#"  name="devlens" id="devlens" >DevLens</a></h3>
+                <p>Quickly inspect page layout and
+                    visualize element boundaries </p>
+            </div>
+        
+        </div>
+        <div class="card-button">
+            <button type="button" id="removeButton" onclick=" removeButton()">Remove</button>
+           <button class="radio active"> <input type="radio" class="toggle" id="toggle"></button>
+
+        </div>
+    </div>
+    
+        <!-- end of devlens -->
+         <div class="card-list">
+        <div class="devlens">
+            <img src="myextentsion/assets/images/logo-style-spy.svg" alt="">
+            <div>
+                <h3><a href="#" id="stylespy">StyleSpy</a></h3>
+                <p>Instant analyze and
+                    copy CSS from any webpage element
+                    </p>
+            </div>
+        </div>
+        
+        <div class="card-button">
+            <button type="button" id="removeButton" onclick=" removeButton()">Remove</button>
+           <button class="radio active"> <input type="radio" class="toggle" id="toggle"></button>
+
+        </div>
+     </div>
+     <!-- style spy-->
+      <!-- beging of speedboast -->
+      <div class="card-list">
+        <div class="devlens">
+            <img src="myextentsion/assets/images/logo-speed-boost.svg" alt="">
+            <div>
+                <h3><a href="#" id="speedBoast">Speed Boast</a></h3>
+                <p>optimizes browser resources usage
+                to accelerate page loading     </p>
+            </div>
+        
+        </div>
+        <div class="card-button">
+            <button type="button" id="removeButton" onclick=" removeButton()">Remove</button>
+           <button class="radio inactive"> <input type="radio" class="toggle" id="toggle"></button>
+
+        </div>
+        
+    </div>
+    <!-- end of speee boast -->
+    <div class="card-list">
+        <div class="devlens">
+            <img src="myextentsion/assets/images/logo-json-wizard.svg" alt="">
+            <div>
+                <h3><a href="#" id="jsonWizjard">JSON wizard</a></h3>
+                <p>format,validates and prettifies
+                    JSON responses in- browser</p>
+            </div>
+        
+        </div>
+        <div class="card-button">
+            <button type="button" id="removeButton" onclick=" removeButton()">Remove</button>
+           <button class="radio active"> <input type="radio" class="toggle" id="toggle"></button>
+
+        </div>
+        </div>
+        <!-- end of JSON -->
+         <!-- begining of tabmaster pro -->
+         <div class="card-list">
+            <div class="devlens">
+                <img src="myextentsion/assets/images/logo-tab-master-pro.svg" alt="">
+                <div>
+                    <h3><a href="#" id="tabMaster">Tab Master Pro</a></h3>
+                    <p>organizes broswer tabs into into groups and sessions
+                        </p>
+                </div>
+            
+            </div>
+            <div class="card-button">
+                <button type="button" id="removeButton" onclick=" removeButton()">Remove</button>
+               <button class="radio active"> <input type="radio" class="toggle" id="toggle"></button>
+    
+            </div>
+            </div>
+            <!-- end of tab master -->
+             <!-- begining of viewportbuddy -->
+             <div class="card-list">
+                <div class="devlens">
+                    <img src="myextentsion/assets/images/logo-viewport-buddy.svg" alt="">
+                    <div>
+                        <h3><a href="#" id="viewport">ViewPort Buddy</a></h3>
+                        <p>stimulate various screen resolutions directly within
+                            the browser
+                            </p>
+                    </div>
+                
+                </div>
+                <div class="card-button">
+                    <button type="button" id="removeButton" onclick=" removeButton()">Remove</button>
+                   <button class="radio inactive"> <input type="radio" class="toggle" id="toggle"></button>
+        
+                </div>
+                </div>
+                <!-- end of viewport buddy -->
+                 <!-- begining of  markup note-->
+                 <div class="card-list">
+                    <div class="devlens">
+                        <img src="myextentsion/assets/images/logo-markup-notes.svg" alt="">
+                        <div>
+                            <h3><a href="#" id="markup">Markup Notes</a></h3>
+                            <p>Enables annotation notes directly unto webpage
+                                for collabrotive debugging
+                                </p>
+                        </div>
+                    
+                    </div>
+                    <div class="card-button">
+                        <button type="button" id="removeButton" onclick=" removeButton()">Remove</button>
+                       <button class="radio active"> <input type="radio" class="toggle" id="toggle"></button>
+            
+                    </div>
+                    </div>
+                    <!-- end of mark up -->
+                     <!-- begining of gridguides -->
+                     <div class="card-list">
+                        <div class="devlens">
+                            <img src="myextentsion/assets/images/logo-grid-guides.svg" alt="">
+                            <div>
+                                <h3><a href="#" id="gridguides">Grid Guides</a></h3>
+                                <p>overlay customizable grids and alignment
+                                    gudies on any webpage
+                    
+                                    </p>
+                            </div>
+                        
+                        </div>
+                        <div class="card-button">
+                            <button type="button" id="removeButton" onclick=" removeButton()">Remove</button>
+                           <button class="radio active"> <input type="radio" class="toggle" id="toggle"></button>
+                
+                        </div>
+                        </div>
+                        <!-- end of guide grids -->
+                         <!-- beging in of palette picker -->
+                         <div class="card-list">
+                            <div class="devlens">
+                                <img src="myextentsion/assets/images/logo-markup-notes.svg" alt="">
+                                <div>
+                                    <h3><a href="#" id="picker">Palette Picker</a></h3>
+                                    <p>Instant extracts color palettes from any webpage
+                                        
+                                        </p>
+                                </div>
+                            
+                            </div>
+                            <div class="card-button">
+                                <button type="button" id="removeButton" onclick=" removeButton()">Remove</button>
+                               <button class="radio inactive"> <input type="radio" class="toggle" id="toggle"></button>
+                    
+                            </div>
+                            </div>
+                            <!-- end of palette -->
+                             <!-- begining of link checker -->
+                             <div class="card-list">
+                                <div class="devlens">
+                                    <img src="myextentsion/assets/images/logo-link-checker.svg" alt="">
+                                    <div>
+                                        <h3><a href="#" id="LinkChecker">LinkChecker</a></h3>
+                                        <p>Scan and highlight broken links on any page
+                                            
+                                            </p>
+                                    </div>
+                                
+                                </div>
+                                <div class="card-button">
+                                    <button type="button" id="removeButton" onclick=" removeButton()">Remove</button>
+                                   <button class="radio active"> <input type="radio" class="toggle" id="toggle"></button>
+                        
+                                </div>
+                                </div>
+                                <!-- end of link checker -->
+                                 <!-- begining of dom snapshot -->
+                                 <div class="card-list" >
+                                    <div class="devlens">
+                                        <img src="myextentsion/assets/images/logo-dom-snapshot.svg" alt="">
+                                        <div>
+                                            <h3><a href="#" id="domSnap">DOM Snapshot</a></h3>
+                                            <p>capture and export DOM structures quickly
+                                                
+                                                </p>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="card-button">
+                                        <button type="button" id="removeButton" onclick=" removeButton()">Remove</button>
+                                       <button class="radio active"> <input type="radio" class="toggle" id="toggle"></button>
+                            
+                                    </div>
+                                    </div>
+                                    <!-- end of  dom snapshot -->
+                                     <!-- begining of consoleplus -->
+                                     <div class="card-list">
+                                        <div class="devlens">
+                                            <img src="myextentsion/assets/images/logo-console-plus.svg" alt="">
+                                            <div>
+                                                <h3><a href="#" id="consoleplus">ConsolePlus</a></h3>
+                                                <p>Enhanced developer console with advanced 
+                                                    filtering and logging
+                                                    
+                                                    </p>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="card-button">
+                                            <button type="button" id="removeButton" onclick=" removeButton()" >Remove</button>
+                                           <button class="radio active"> <input type="radio" class="toggle" id="toggle"></button>
+                                
+                                        </div>
+                                        </div>
+                                        <!-- end of consoleplus -->
+
+     </div>
+
+
+    
+    <script src="main.js">
+
+    </script>
+</body>
+</html>
